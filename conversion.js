@@ -1,3 +1,5 @@
+//Olumayowa Mosuro
+//c0891502
 // Hardcoded exchange rates
 const CAD_TO_USD_RATE = 0.75;
 const USD_TO_CAD_RATE = 1.33;
@@ -25,6 +27,6 @@ function convertCurrency() {
         return;
     }
 
-    
+
     document.getElementById('result').innerText = `Result: ${result.toFixed(3)} ${toCurrency}`;
 }
