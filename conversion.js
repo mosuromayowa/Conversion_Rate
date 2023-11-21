@@ -18,10 +18,9 @@ function convertCurrency() {
     var result;
     if (fromCurrency === 'CAD' && toCurrency === 'USD') {
         result = amount * CAD_TO_USD_RATE;
-    
-        alert('Invalid conversion selection.');
-        return;
-    }
+    } else if (fromCurrency === 'USD' && toCurrency === 'CAD') {
+        result = amount * USD_TO_CAD_RATE;
+  
 
     
     document.getElementById('result').innerText = `Result: ${result.toFixed(3)} ${toCurrency}`;
