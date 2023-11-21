@@ -10,9 +10,12 @@ function convertCurrency() {
     const toCurrency = document.getElementById('toCurrency').value;
 
     // Validate input
- 
+    if (isNaN(amount)) {
+        alert('Please enter a valid amount.');
+        return;
+    }
     // Perform conversion
-    let result;
+    var result;
     if (fromCurrency === 'CAD' && toCurrency === 'USD') {
         result = amount * CAD_TO_USD_RATE;
     } else if (fromCurrency === 'USD' && toCurrency === 'CAD') {
