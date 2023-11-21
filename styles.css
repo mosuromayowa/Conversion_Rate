@@ -15,6 +15,10 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.container2 {
+    background-color: red;
+}
+
 label {
     display: block;
     margin-bottom: 5px;
@@ -27,6 +31,7 @@ input, select {
     margin-bottom: 15px;
     box-sizing: border-box;
 }
+
 
 button {
     background-color: #534caf;
