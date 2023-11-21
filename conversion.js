@@ -26,5 +26,5 @@ function convertCurrency() {
     }
 
     
-   
+    document.getElementById('result').innerText = `Result: ${result.toFixed(3)} ${toCurrency}`;
 }
