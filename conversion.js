@@ -1,6 +1,5 @@
 // Hardcoded exchange rates
-const CAD_TO_USD_RATE = 0.75;
-const USD_TO_CAD_RATE = 1.33;
+
 
 // Function to convert currency
 function convertCurrency() {
@@ -14,7 +13,6 @@ function convertCurrency() {
         alert('Please enter a valid amount.');
         return;
     }
-
     // Perform conversion
     let result;
     if (fromCurrency === 'CAD' && toCurrency === 'USD') {
